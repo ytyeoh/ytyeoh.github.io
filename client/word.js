@@ -20,13 +20,19 @@ var captionH2b = 'Rooms &amp; Suites'
 var caption2a= "awsome room with clean service"
 var rooms = {
   room1: {
-    image: "img_1.jpg", type: 'vivip Room double', price: 'RM99999 / per night'
+    image: "img_1.jpg", type: 'vivip Room double', price: 'RM99999 / per night', facilities:{
+        Parking: 'Yes', Internet: 'Yes', Kitchen: 'Yes', Bedroom: '2', Bathroom: '1', 'Living Area': 'Yes', Amenities: 'fan, iron, clothes rack', Pets: 'not allow', Accessibility: 'Entire unit located on ground floor', Outdoors: 'BBQ facilities', Miscellaneous: 'Air conditioning, Non-smoking throughout, Family rooms'
+    }
   },
   room2: {
-    image: "img_2.jpg", type: 'Double Room', price: 'RM120 / per night'
+    image: "img_2.jpg", type: 'Double Room', price: 'RM120 / per night', facilities:{
+        Parking: 'Yes', Internet: 'Yes', Kitchen: 'Yes', Bedroom: '2', Bathroom: '1', 'Living Area': 'Yes', Amenities: 'fan, iron, clothes rack', Pets: 'not allow', Accessibility: 'Entire unit located on ground floor', Outdoors: 'BBQ facilities', Miscellaneous: 'Air conditioning, Non-smoking throughout, Family rooms'
+    }
   },
   room3:{
-    image: "img_3.jpg", type: 'Family Room', price: 'RM250 / per night'
+    image: "img_3.jpg", type: 'Family Room', price: 'RM250 / per night', facilities:{
+        Parking: 'Yes', Internet: 'Yes', Kitchen: 'Yes', Bedroom: '2', Bathroom: '1', 'Living Area': 'Yes', Amenities: 'fan, iron, clothes rack', Pets: 'not allow', Accessibility: 'Entire unit located on ground floor', Outdoors: 'BBQ facilities', Miscellaneous: 'Air conditioning, Non-smoking throughout, Family rooms'
+    }
   }
 }
 

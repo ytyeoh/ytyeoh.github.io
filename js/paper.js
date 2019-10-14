@@ -35,10 +35,21 @@ document.getElementById('caption2a').innerHTML = caption2a;
 
 var y;
 for (y in rooms){
-  var room = document.getElementById(y).children[0].children;
-  room[0].children[0].src = 'client/images/' + rooms[y]["image"];
-  room[1].children[0].innerHTML = rooms[y]['type'];
-  room[1].children[1].innerHTML = rooms[y]['price'];
+  // var room = document.getElementById(y).children[0].children;
+  // room[0].children[0].src = 'client/images/' + rooms[y]["image"];
+  // room[1].children[0].innerHTML = rooms[y]['type'];
+  // room[1].children[1].innerHTML = rooms[y]['price'];
+  var divtest = document.createElement("div");
+  divtest.classList.add('col-lg-4', 'col-md-6', 'aos-init');
+  divtest.dataset.aos = "fade-up";
+  divtest.dataset.aos.delay = attrations[y] + '00';
+  divtest.innerHTML = '<figure class="img-wrap"><img src="client/images/' + rooms[y]["image"]+ '" alt="Image placeholder" class="img-fluid"></figure><div class="p-3 text-center room-info"><h2>' + rooms[y]["title"] + '</h2><span class="text-uppercase letter-spacing-1">' + rooms[y]["price"]+ '</span></div><div class="text-center"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#my' + y + '">More</button></div>';
+  document.getElementById('roomPackage').appendChild(divtest);
+  document.getElementById('modalclass').innerHTML += '<div id="my' + y + '" class="modal fade" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">' + y + '</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><p><img src="client/images/' + rooms[y]["image"]+ '" alt="Image placeholder" class="img-fluid"></p><div class="row" id="modal'+ y +'"></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Back</button></div></div></div></div>';
+  for (f in rooms[y]["facilities"]) {
+
+    document.getElementById('modal'+y).innerHTML += '<p class="col-md-12 col-lg-6"><b>'+ f + '</b> : ' + rooms[y]["facilities"][f] + '</p>'
+  }
 }
 
 document.getElementById('caption3a').innerHTML = caption3a;
