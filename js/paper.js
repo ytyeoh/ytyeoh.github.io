@@ -1,14 +1,9 @@
-// var x = document.getElementsByClassName("menu2");
-// var i;
-// for (i = 0; i < x.length; i++) {
-//   x[i].innerHTML = menu2;
-// }
-// var x;
 document.getElementById('brand').innerHTML = brand;
 
 for (x in menu) {
   document.getElementById(x).innerHTML = menu[x];
   document.getElementById(x).href = "#"+menu[x];
+  document.getElementById(x).classList.add('menuLink');
   var a = document.getElementById('a-'+x)
   if (a!=null){
     a.id = menu[x];
@@ -35,10 +30,6 @@ document.getElementById('caption2a').innerHTML = caption2a;
 
 var y;
 for (y in rooms){
-  // var room = document.getElementById(y).children[0].children;
-  // room[0].children[0].src = 'client/images/' + rooms[y]["image"];
-  // room[1].children[0].innerHTML = rooms[y]['type'];
-  // room[1].children[1].innerHTML = rooms[y]['price'];
   var divtest = document.createElement("div");
   divtest.classList.add('col-lg-4', 'col-md-6', 'aos-init');
   divtest.dataset.aos = "fade-up";
