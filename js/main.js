@@ -4,4 +4,6 @@ smoothScroll();var dateAndTime=function(){$('#m_date').datepicker({'format':'m/d
 
 $( ".menuLink" ).click(function() {
   $('#site-navbar')[0].style.display= 'none';
+  $('.site-menu-toggle').removeClass('open');
+  $('.menu-open').removeClass('menu-open');
 });
