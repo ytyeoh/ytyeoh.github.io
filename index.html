@@ -168,30 +168,31 @@
     </div>
     <div class="row">
       <div class="col-md-7 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-        <form action="#" method="post" class="bg-white p-md-5 p-4 mb-5 border">
+        <form action="https://obscure-peak-65494.herokuapp.com/lists" accept-charset="UTF-8" method="post" class="bg-white p-md-5 p-4 mb-5 border">
           <div class="row">
+            <input name="utf8" type="hidden" value="✓">
             <div class="col-md-6 form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" class="form-control ">
+              <input type="text" id="list_name" name="list[name]" class="form-control ">
             </div>
             <div class="col-md-6 form-group">
               <label for="phone">Phone</label>
-              <input type="text" id="phone" class="form-control ">
+              <input type="text" id="list_phone" name="list[phone]" class="form-control ">
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" class="form-control ">
+              <input type="email" id="list_email" name="list[email]" class="form-control ">
             </div>
           </div>
           <div class="row mb-4">
             <div class="col-md-12 form-group">
               <label for="message">Write Message</label>
-              <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+              <textarea name="message" id="desc" name="list[desc]" class="form-control " cols="30" rows="8"></textarea>
             </div>
           </div>
-          <input type="hidden" id="custId" name="custId">
+          <input type="hidden" id="list_custId" name="list[custId]">
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="submit" value="Send Message" class="btn btn-primary text-white font-weight-bold">
@@ -263,7 +264,7 @@ Copyright ©
 <script src="https://ytyeoh.github.io/js/bootstrap-datepicker.js" type="text/javascript"></script>
 <script src="https://ytyeoh.github.io/js/jquery.timepicker.min.js" type="text/javascript"></script>
 <script src="client/word.js" type="text/javascript"></script>
-<script src="https://ytyeoh.github.io/js/paper.js" type="text/javascript"></script>
+<script src="js/paper.js" type="text/javascript"></script>
 <script src="https://ytyeoh.github.io/js/main.js" type="text/javascript"></script>
 
 

@@ -70,7 +70,7 @@ for (y in tours){
 
 
 // section6
-document.getElementById('custId').value = custId
+document.getElementById('list_custId').value = custId
 document.getElementById('address').innerHTML = address1 + '<br>' + address2
 document.getElementById('mobile').innerHTML = mobile
 document.getElementById('whatsapp').href = "https://wa.me/6"+mobile
@@ -80,3 +80,4 @@ document.getElementById('fAddress').innerHTML = address1 + '<br>' + address2
 document.getElementById('fMobile').innerHTML = mobile
 
 document.getElementById('facebook').href = facebookUrl
+
