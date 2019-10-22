@@ -71,6 +71,7 @@ for (y in tours){
 
 // section6
 document.getElementById('list_custId').value = custId
+document.getElementById('list_address').value = address1 + address2
 document.getElementById('address').innerHTML = address1 + '<br>' + address2
 document.getElementById('mobile').innerHTML = mobile
 document.getElementById('whatsapp').href = "https://wa.me/6"+mobile
