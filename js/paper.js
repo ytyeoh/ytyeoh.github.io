@@ -75,6 +75,7 @@ document.getElementById('list_address').value = address1 + address2
 document.getElementById('address').innerHTML = address1 + '<br>' + address2
 document.getElementById('mobile').innerHTML = mobile
 document.getElementById('whatsapp').href = "https://wa.me/6"+mobile
+document.getElementById('url').value = window.location.href 
 
 
 document.getElementById('fAddress').innerHTML = address1 + '<br>' + address2
