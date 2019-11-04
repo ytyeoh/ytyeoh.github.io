@@ -61,7 +61,7 @@ $(document).ready(function() {
                             $(".alert-top").hide();
                           }, 2000);
                     $('#loader').hide();
-                    $("#result").html('Email Send'); 
+                    $("#result").html('Thank For Contact Us');
                     $("#result").show();
                 }
             });
