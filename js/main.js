@@ -62,7 +62,7 @@ $(document).ready(function() {
                           }, 2000);
                     $('#loader').hide();
                     $("#result").html('Email Send'); 
-                    $("#result").addClass("alert alert-success offset4 span4");
+                    $("#result").show();
                 }
             });
         }                
