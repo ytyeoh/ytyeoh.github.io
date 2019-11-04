@@ -48,10 +48,6 @@ $(document).ready(function() {
                 },
                 success: function(data) {
                     if(data == 'success'){
-                        $(".alert").show();
-                          setTimeout(function(){
-                            $(".alert").hide();
-                          }, 2000);
                         console.log(data);
                     } else {
                         $('.no-config').show();
@@ -60,6 +56,10 @@ $(document).ready(function() {
 
                 },
                 complete: function() { 
+                    $(".alert").show();
+                          setTimeout(function(){
+                            $(".alert").hide();
+                          }, 2000);
                     $('#loader').hide();
                     $("#result").html('Email Send'); 
                     $("#result").addClass("alert alert-success offset4 span4");
