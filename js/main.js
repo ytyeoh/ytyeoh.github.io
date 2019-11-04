@@ -58,7 +58,7 @@ $(document).ready(function() {
                 complete: function() { 
                     $(".alert").show();
                           setTimeout(function(){
-                            $(".alert").hide();
+                            $(".alert-success").hide();
                           }, 2000);
                     $('#loader').hide();
                     $("#result").html('Email Send'); 
