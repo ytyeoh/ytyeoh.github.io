@@ -36,7 +36,8 @@ $(document).ready(function() {
             $.ajax({
                 type: 'POST',
                 async: true,
-                url: './client/mail.php',
+                url: 'https://guarded-forest-36819.herokuapp.com/lists',
+                // url: './client/mail.php',
                 data: dataparam,
                 datatype: 'json',
                 cache: true,
@@ -44,10 +45,13 @@ $(document).ready(function() {
                 beforeSend: function() { 
                     $('#loader').show();
                     $('#button').hide();
-
                 },
                 success: function(data) {
                     if(data == 'success'){
+                        $(".alert").show();
+                          setTimeout(function(){
+                            $(".alert").hide();
+                          }, 2000);
                         console.log(data);
                     } else {
                         $('.no-config').show();
