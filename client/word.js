@@ -29,6 +29,7 @@ var rooms = {
     image: "img_3.jpg", type: 'Family Room', price: 'RM250 / per night', desc: 'cece'
   }
 }
+var callText= 'work'
 var call = 'Contact Now'
 
 // section3
