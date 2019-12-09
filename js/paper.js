@@ -38,6 +38,7 @@ for (y in rooms){
   document.getElementById('roomPackage').appendChild(divtest);
   document.getElementById('modalclass').innerHTML += '<div id="my' + y + '" class="modal fade" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">' + y + '</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><p><img src="client/images/' + rooms[y]["image"]+ '" alt="Image placeholder" class="img-fluid"></p><div class="row"><p class="col-md-12">' + rooms[y]["desc"]+ '</p  ></div></div><div class="modal-footer"><button type="button" class="btn btn-info" data-dismiss="modal">Back</button></div></div></div></div>';
 }
+document.getElementById('contact-text').innerHTML = callText;
 document.getElementById('contact-btn').innerHTML = call;
 document.getElementById('caption3a').innerHTML = caption3a;
 for (x in galeryImages){
