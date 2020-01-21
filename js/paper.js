@@ -34,16 +34,16 @@ for (y in rooms){
   divtest.classList.add('col-lg-4', 'col-md-6', 'aos-init');
   divtest.dataset.aos = "fade-up";
   divtest.dataset.aos.delay = attrations[y] + '00';
-  divtest.innerHTML = '<figure class="img-wrap"><img src="client/images/' + rooms[y]["image"]+ '" alt="Image placeholder" class="img-fluid"></figure><div class="p-3 text-center room-info"><h2>' + rooms[y]["title"] + '</h2><span class="text-uppercase letter-spacing-1">' + rooms[y]["price"]+ '</span></div><div class="text-center"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#my' + y + '">More</button></div>';
+  divtest.innerHTML = '<figure class="img-wrap"><img src="client/images/' + rooms[y]["image"]+ '" alt="'+rooms[y]["title"]+'" class="img-fluid"></figure><div class="p-3 text-center room-info"><h2>' + rooms[y]["title"] + '</h2><span class="text-uppercase letter-spacing-1">' + rooms[y]["price"]+ '</span></div><div class="text-center"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#my' + y + '">More</button></div>';
   document.getElementById('roomPackage').appendChild(divtest);
-  document.getElementById('modalclass').innerHTML += '<div id="my' + y + '" class="modal fade" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">' + rooms[y]["title"] + '</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><p><img src="client/images/' + rooms[y]["image"]+ '" alt="Image placeholder" class="img-fluid"></p><div class="row"><p class="col-md-12">' + rooms[y]["desc"]+ '</p  ></div></div><div class="modal-footer"><button type="button" class="btn btn-info" data-dismiss="modal">Back</button></div></div></div></div>';
+  document.getElementById('modalclass').innerHTML += '<div id="my' + y + '" class="modal fade" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">' + rooms[y]["title"] + '</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><p><img src="client/images/' + rooms[y]["image"]+ '" alt='+rooms[y]["title"]+' class="img-fluid"></p><div class="row"><p class="col-md-12">' + rooms[y]["desc"]+ '</p  ></div></div><div class="modal-footer"><button type="button" class="btn btn-info" data-dismiss="modal">Back</button></div></div></div></div>';
 }
 document.getElementById('contact-text').innerHTML = callText;
 document.getElementById('contact-btn').innerHTML = call;
 document.getElementById('caption3a').innerHTML = caption3a;
 for (x in galeryImages){
   var divtest = document.createElement("div");
-  divtest.innerHTML = '<img src="client/images/' + galeryImages[x]+ '" alt="Image placeholder" class="img-fluid">';
+  divtest.innerHTML = '<img src="client/images/' + galeryImages[x]+ '" alt="'+galeryImages[x].split('.').slice(0, -1).join('.')+'" class="img-fluid">';
   document.getElementById('carousel').appendChild(divtest);
 }
 
@@ -54,14 +54,14 @@ for (y in attrations){
   divtest.classList.add('col-lg-4', 'col-md-6', 'col-sm-6', 'col-12', 'post', 'aos-init');
   divtest.dataset.aos = "fade-up";
   divtest.dataset.aos.delay = attrations[y] + '00';
-  divtest.innerHTML = '<div class="media media-custom d-block mb-4 h-100"><img src="client/images/' + attrations[y]['image'] + '" alt="Image placeholder" class="img-fluid"><div class="media-body"><h2 class="mt-0 mb-3">' + attrations[y]['title'] + '</h2><p>' + attrations[y]['desc'] + '</p></div></div>';
+  divtest.innerHTML = '<div class="media media-custom d-block mb-4 h-100"><img src="client/images/' + attrations[y]['image'] + '" alt="' + attrations[y]['title'] + '" class="img-fluid"><div class="media-body"><h2 class="mt-0 mb-3">' + attrations[y]['title'] + '</h2><p>' + attrations[y]['desc'] + '</p></div></div>';
   document.getElementById('media').appendChild(divtest);
 }
 
 for (y in tours){
   var divtest = document.createElement("div");
   divtest.classList.add('owl-item');
-  divtest.innerHTML = '<a href="'+ tours[y]["url"] +'"><div class="testimonial text-center slider-item"><img src="client/images/'+ tours[y]["image"]+'" alt="Image placeholder" class="mx-auto"></div><blockquote class="margin0"><h3>'+ tours[y]['title']+'</h3><p>' + tours[y]['desc'] + '</p></blockquote></a>';
+  divtest.innerHTML = '<a href="'+ tours[y]["url"] +'"><div class="testimonial text-center slider-item"><img src="client/images/'+ tours[y]["image"]+'" alt="'+tours[y]['title']+'" class="mx-auto"></div><blockquote class="margin0"><h3>'+ tours[y]['title']+'</h3><p>' + tours[y]['desc'] + '</p></blockquote></a>';
   document.getElementById('tours').appendChild(divtest);
 }
 
